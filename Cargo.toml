@@ -1,0 +1,21 @@
+[package]
+name = "new-array"
+version = "0.1.0"
+authors = ["Boyu Yang <yangby@cryptape.com>"]
+edition = "2018"
+description = "Implement the same traits as `[u8; N]` (`N<=32`) for a new type of a fixed-size array automatically."
+homepage = "https://github.com/yangby-cryptape/rust-new-array"
+repository = "https://github.com/yangby-cryptape/rust-new-array"
+keywords = ["array", "fixed-size"]
+categories = ["development-tools::procedural-macro-helpers"]
+license = "Apache-2.0 OR MIT"
+readme = "README.md"
+include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE-*"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "~1.0"
+quote = "~1.0"
+proc-macro2 = "~1.0"
